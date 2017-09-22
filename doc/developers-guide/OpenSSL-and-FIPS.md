@@ -21,7 +21,7 @@ KERL_CONFIGURE_OPTIONS="--enable-fips" ./kerl build 20.0 20.0-fips
 
 ### Building MongooseIM with a custom OpenSSL
 
-If you want to use a different OpenSSL than the default one, before running `./rebar3 compile` or `make rel` please export the CFLAGS and LDFLAGS env vars pointing to a FIPS compliant OpenSSL, f.e.
+If you want to use a custom OpenSSL, please export the CFLAGS and LDFLAGS env vars pointing to a FIPS compliant OpenSSL before running `./rebar3 compile` or `make rel`.
 
 ```
 OPENSSL_LIB=~/openssl/lib #put your path here
